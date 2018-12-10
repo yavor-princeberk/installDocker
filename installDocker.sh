@@ -21,6 +21,7 @@ while true; do
         sudo adduser deploy
         sudo usermod -a -G docker deploy
         echo -en "I will reboot - Press Q to exit, enter to continue \n"
+        read input
         if [[ $input = "q" ]] || [[ $input = "Q" ]]
                 then break
         fi
